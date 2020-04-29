@@ -2,48 +2,168 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 <style>
-body { 
+
+
+/*********************************/
+body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
-#header {
+.top-container {
   background-color: #f1f1f1;
-  padding: 50px 10px;
-  color: black;
+  padding: 30px;
   text-align: center;
-  font-size: 90px; 
-  font-weight: bold;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: 0.2s;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+
+
+
+
+/*********************************/
+
+
+
+/* Style the tab */
+.tab {
+  width: 10%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+   font-size: 14px;
+}
+
+
+
+a, u {
+    text-decoration: none;
 }
 </style>
 </head>
 <body>
 
-<div id="header">FlatMart</div>
 
-<div style="margin-top:200px;padding:15px 15px 2500px;font-size:30px">
-  <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
-  <p>Scroll down this frame to see the effect!</p>
-  <p>Scroll to the top to remove the effect.</p>
-  <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="header" id="myHeader">
+  <h2>FlatMart</h2>
 </div>
+<br><br>
+<center>
+<h2>NoBrokerage Property Site</h2>
+
+<br><br>
+<table width="60%">
+<tr>
+
+<td width="20%">
+<a href="">
+<i class="fa fa-building" style="font-size:48px"></i> <br> Rent
+</a>
+</td>
+
+<td width="20%">
+<a href="">
+<i class="fa fa-home" style="font-size:48px"></i><br> Buy
+</a>
+</td>
+
+
+<td width="20%">
+<a href="">
+ <i class="fa fa-bullhorn" style="font-size:48px"></i><br>Are you a Property Owner?
+</a>
+</td>
+
+
+</tr>
+</table>
+
+
+
+
+
+			
+		
+</div>
+</center>
+
+
+
+
+
+
+
+
 
 <script>
-// When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {myFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.fontSize = "30px";
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
   } else {
-    document.getElementById("header").style.fontSize = "90px";
+    header.classList.remove("sticky");
   }
 }
+
+
 </script>
 
 </body>
