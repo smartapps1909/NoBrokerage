@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+/***********************/
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #fff;
+  color: #1DA1f2;
+  
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/***********************/
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+}
+
+.containerCard {
+  padding: 6px 8px;
+}
+
+
+
+/***********************/
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 10px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+/***********************/
+
+input[type=textarea], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+</style>
+</head>
+<body>
+<div class="header" id="myHeader">
+  <center><h2>FlatMart</h2></center>
+  <hr>
+</div>
+
+
+
+<table width="100%">
+<tr>
+
+
+
+<td width="10%" valign="top" align="left">
+  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+  <div class="card containerCard">
+    <h4><b>Member</b></h4> 
+    <!--<p>Bio</p> -->
+  </div>
+
+
+
+
+
+
+<td width="60%">
+
+<div class="card containerCard">
+
+
+
+   <div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  
+
+<form action="/action_page.php">
+    <input type="textarea"  id="fname" name="firstname" placeholder="Share Something Today...">
+	<div align="right"><a><i class="fa fa-paper-plane " style="font-size:35px;color : black;"></i></a></div>
+  
+</div>
+
+
+   
+   <div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Allowing private companies to use ISRO facilities,I hope this decision will turn out good.</p>
+  <span class="time-right">11:00</span>
+</div>
+
+
+
+<div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Hello. How are you today?</p>
+  <span class="time-right">11:00</span>
+</div>
+
+
+
+<div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>48 states to ease some restrictions this weekend</p>
+  <span class="time-right">11:00</span>
+</div>
+
+
+
+<div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>The Bundesliga returned on Saturday, becoming the world’s first major sports competition to re-emerge amid the COVID-19 pandemic.</p>
+  <span class="time-right">11:00</span>
+</div>
+
+
+
+<div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>When was this taken mam? what was the function? do you remember?</p>
+  <span class="time-right">11:00</span>
+</div>
+
+<div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>When was this taken mam? what was the function? do you remember?</p>
+  <span class="time-right">11:00</span>
+</div>
+
+
+<div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Dalhousie University's Canadian Centre for Vaccinology.</p>
+  <span class="time-right">11:00</span>
+</div>
+
+
+<div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Cambodia says all Covid-19 patients recovered, no new cases for a month 
+</li></p>
+  <span class="time-right">11:00</span>
+</div>
+
+
+
+
+
+</td>
+
+<td width="30%">
+</td>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+</script>
+
+</html> 
