@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
+
 
 
 /***********************/
@@ -15,6 +18,7 @@ body {
   max-width: 100%;
   padding: 0 10px;
   font-family: 'Oxygen', sans-serif;
+  opacity :0.9;
 }
 
 .top-container {
@@ -61,6 +65,34 @@ a:hover {color:#404040;}
 a:active {color:#404040;}  
 
 td { text-align: center;}
+
+
+
+
+/*****************************/
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+img { max-width: 100%; }
+/*****************************/
+
+h2{opacity : 0.8;
+}
+
 </style>
 </head>
 <body>
@@ -72,26 +104,26 @@ td { text-align: center;}
 
 <center>
 <h2>No Brokerage Property Site</h2>
-<hr>
+
 <h2>Search</h2>
-<table width="60%">
+<table width="100%">
 <tr>
 
-<td width="20%">
+<td width="33%">
 <a href="Rent.html">
-<i class="fa fa-building" style="font-size:75px;color : #fd3753;"></i> <br> Rent
+<i class="fa fa-building" style="font-size:70px;color : #fd3703;"></i> <br> Rent
 </a>
 </td>
 
-<td width="20%">
+<td width="33%">
 <a href="Buy.html">
-<i class="fa fa-home" style="font-size:75px;color : #fd3753;"></i><br>Buy
+<i class="fa fa-home" style="font-size:70px;color : #fd3703;"></i><br>Buy
 </a>
 </td>
 
-<td width="20%">
+<td width="33%">
 <a href="Sharing.html">
-<i class="fa fa-users" style="font-size:75px;color : #fd3753;"></i> <br> Sharing
+<i class="fa fa-users" style="font-size:70px;color : #fd3703;"></i> <br> Sharing
 </a>
 </td>
 
@@ -109,14 +141,14 @@ td { text-align: center;}
 
 
 
-<table width="60%">
+<table width="100%">
 <tr>
 
 
 
-<td width="20%">
+<td width="100%">
 <a href="Post.html">
- <i class="fa fa-key" style="font-size:75px;color: #1aa260"></i><br>Are you a Property Owner?
+ <i class="fa fa-key" style="font-size:70px;color: #fd3703"></i><br>Are you a Property Owner?
 </a>
 </td>
 
@@ -138,32 +170,32 @@ td { text-align: center;}
 
 
 
-<table width="80%">
+<table width="100%">
 <tr>
 
 
 
-<td width="20%">
+<td width="25%">
 <a href="">
-<i class="material-icons" style="font-size:75px;color:#4c8bf5;">account_balance_wallet</i><br>No Brokerage, more reachability
+<i class="material-icons" style="font-size:70px;color:#fd3703;">account_balance_wallet</i><br>No Brokerage, more reachability
 </a>
 </td>
 
-<td width="20%">
+<td width="25%">
 <a href="">
-<i class="material-icons" style="font-size:75px;color:#4c8bf5;">playlist_add_check	</i><br>Free Listing
+<i class="material-icons" style="font-size:70px;color:#fd3703;">playlist_add_check	</i><br>Free Listing
 </a>
 </td>
 
-<td width="20%">
+<td width="25%">
 <a href="">
-<i class="material-icons" style="font-size:75px;color:#4c8bf5;">equalizer</i><br>No paid promotions
+<i class="material-icons" style="font-size:70px;color:#fd3703;">equalizer</i><br>No paid promotions
 </a>
 </td>
 
-<td width="20%">
+<td width="25%">
 <a href="">
-<i class="material-icons" style="font-size:75px;color:#4c8bf5;">fingerprint</i><br>Truely No Brokerage Fees
+<i class="material-icons" style="font-size:70px;color:#fd3703;">fingerprint</i><br>Truely No Brokerage Fees
 </a>
 </td>
 
@@ -181,23 +213,58 @@ td { text-align: center;}
 
 
 
-<table width="60%">
+<table width="100%">
 <tr>
 
 
-<td width="20%">
+<td width="33%">
 <a href="News.html">
- <i class="fa fa-bullhorn" style="font-size:75px"></i><br>News
+ <i class="fa fa-bullhorn" style="font-size:70px;color:#fd3703;"></i><br>News
 </a>
 </td>
-<td width="20%">
+
+
+<td width="33%">
 <a href="TypicalRent.html">
- <i class="fa fa-thumbs-up" style="font-size:75px"></i><br>Typical Rent
+ <i class="fa fa-thumbs-up" style="font-size:70px;color:#fd3703;"></i><br>Typical Rent
 </a>
 </td>
-<td width="20%">
+
+
+<td width="33%">
 <a href="blog.html">
- <i class="fa fa-comments" style="font-size:75px"></i><br>Discussion Forum
+ <i class="fa fa-comments" style="font-size:70px;color:#fd3703;"></i><br>Discussion Forum
+</a>
+</td>
+
+
+
+</tr>
+</table>
+
+<hr>
+
+<!--------------------------------------------------------------------------------------->
+
+
+
+<!--------------------------------------------------------------------------------------->
+	<!--section 5-->
+
+<h2>Find A New Home On The Go</h2>
+
+
+
+
+<table width="100%">
+<tr>
+
+
+
+
+<td width="25%">
+<a href="blog.html">
+ <i class="fa fa-android" style="font-size:70px;color:green;"></i><br>Download Androdid App
 </a>
 </td>
 
@@ -207,6 +274,7 @@ td { text-align: center;}
 <hr>
 
 <!--------------------------------------------------------------------------------------->
+
 
 </center>
 

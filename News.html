@@ -4,10 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-<script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 <style>
-
-
 /***********************/
 
 body {
@@ -47,30 +46,147 @@ font-family: 'Oxygen', sans-serif;
 }
 
 /***********************/
-
-
-
-
-a, i {
-    text-decoration: none;
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 10px;
+  font-family: 'Oxygen', sans-serif;
 }
 
-a {color:#404040;}        
-a:visited {color:#404040;} 
-a:hover {color:#404040;} 
-a:active {color:#404040;}  
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
 
-td { text-align: center;}
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 120px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 80%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+/***********************/
+
+input[type=textarea], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/*****************************/
+
+h2{opacity : 0.8;
+}
+
 </style>
 </head>
 <body>
-
-
 <div class="header" id="myHeader">
-<center><h2>FlatMart</h2></center></div>
+  <center><h2>FlatMart</h2></center>
+  
+</div>
 
 <center>
 <h2>News</h2>
+<table width="90%">
+<tr>
+
+<td width="100%">
+
+<div class="card containerCard">
+
+
+
+<div class="container">
+  <img src="priceDown.png" alt="Avatar" style="width:100%;">
+ <p>90% of prospective home buyers see correction in property prices post lockdown
+</p>  <span class="time-right">18/05/2020</span>
+</div>
+
+   
+   <div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>News 1</p>
+  <span class="time-right">10/11/2019 </span>
+</div>
+
+
+
+<div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>News 1</p>
+  <span class="time-right">21/9/2019 </span>
+</div>
+
+
+
+<div class="container">
+  <img src="bandmember.jpg" alt="Avatar" style="width:100%;">
+   <p>News 1</p>
+  <span class="time-right">10/9/2019</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+<td width="30%">
+</td>
+
+
+
+</center>
+
+
+
+</body>
+
+
+
 
 
 <script>
@@ -90,5 +206,4 @@ function myFunction() {
 
 </script>
 
-</body>
-</html>
+</html> 
